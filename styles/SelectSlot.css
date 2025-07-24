@@ -1,0 +1,160 @@
+/* src/styles/SelectSlot.css */
+
+.select-slot-page {
+  padding: 20px;
+}
+
+.select-slot-page .back-link {
+  margin-bottom: 30px;
+}
+
+.select-slot-page .page-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.select-slot-page .page-description {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.slot-selection-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.slot-selection-container .card {
+  padding: 25px;
+}
+
+.slot-selection-container h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Selected Skills Card */
+.selected-skills-card {
+  grid-column: span 1; /* Adjust as needed for layout */
+}
+
+.selected-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.skill-tag {
+  background-color: #e6f2ff;
+  color: #007bff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.estimated-duration {
+  font-size: 0.95em;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Select Date Card (Calendar) */
+.select-date-card .react-calendar {
+  border: none;
+  width: 100%; /* Make calendar fill its container */
+}
+
+.react-calendar__navigation button {
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+.react-calendar__tile {
+  padding: 10px 0;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.react-calendar__tile--now {
+  background: #e6f2ff; /* Highlight current day */
+}
+
+.react-calendar__tile--active {
+  background: #007bff !important;
+  color: white !important;
+  border-radius: 5px;
+}
+
+.react-calendar__tile--disabled {
+  background-color: #f0f0f0 !important;
+  color: #ccc !important;
+  cursor: not-allowed;
+}
+
+/* Select Time Card */
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.time-slot-btn {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.2s ease;
+  color: #333;
+}
+
+.time-slot-btn:hover {
+  background-color: #e9ecef;
+  border-color: #ccc;
+}
+
+.time-slot-btn.selected {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Booking Summary Card */
+.booking-summary-card {
+  grid-column: span 2; /* Span two columns on wider screens */
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.booking-summary-card p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.booking-summary-card strong {
+  color: #007bff;
+}
+
+.confirm-slot-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+.confirm-slot-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

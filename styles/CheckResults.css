@@ -1,0 +1,97 @@
+/* src/styles/CheckResults.css */
+
+.check-results-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.check-results-page .back-link {
+  margin-bottom: 30px;
+  float: left; /* Aligns to top-left */
+}
+
+.check-results-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
+  padding-top: 60px; /* Space for the back link */
+}
+
+.magnifying-glass-icon {
+  font-size: 5em;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.check-results-page .page-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.check-results-page .page-description {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.result-input-card {
+  max-width: 500px;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box; /* Include padding in width */
+  margin-bottom: 30px;
+}
+
+.result-input-card h3 {
+  font-size: 1.8em;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.result-id-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.result-id-input::placeholder {
+  color: #aaa;
+}
+
+.view-results-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.no-result-id {
+  margin-top: 20px;
+}
+
+.no-result-id p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.take-new-test-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+.take-new-test-link:hover {
+  text-decoration: underline;
+}
