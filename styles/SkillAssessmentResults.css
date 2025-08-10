@@ -1,0 +1,225 @@
+/* src/styles/SkillAssessmentResults.css */
+
+.skill-assessment-results-page {
+  padding: 20px;
+}
+
+.skill-assessment-results-page .back-link {
+  margin-bottom: 30px;
+}
+
+.skill-assessment-results-page .page-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.result-id-display {
+  text-align: center;
+  color: #777;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.results-grid .card {
+  padding: 30px;
+}
+
+.results-grid h3 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Overall Score Card */
+.overall-score-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overall-score-circle {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.overall-performance-text {
+  font-size: 1.1em;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Skill Breakdown Card */
+.skill-breakdown-card {
+  grid-column: span 1; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-breakdown-chart {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.skill-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-bar-container .skill-name {
+  flex: 0 0 120px; /* Fixed width for skill name */
+  font-size: 1em;
+  color: #555;
+  text-align: right;
+}
+
+.skill-bar-wrapper {
+  flex-grow: 1;
+  height: 15px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-bar {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+.skill-bar-container .skill-score {
+  flex: 0 0 50px; /* Fixed width for score */
+  font-size: 0.9em;
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Individual Skill Scores Card */
+.individual-skill-scores-card {
+  grid-column: span 2; /* Span two columns on wider screens */
+}
+
+.individual-scores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.individual-skill-item {
+  text-align: center;
+  width: 120px; /* Control size of each circle container */
+}
+
+.individual-skill-item .CircularProgressbar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+}
+
+.skill-name-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.skill-type-label {
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* Recommended Learning Paths & Suitable Job Roles */
+.recommended-learning-paths-card,
+.suitable-job-roles-card {
+  padding: 30px;
+}
+
+.learning-paths-list,
+.job-roles-list {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.learning-paths-list li,
+.job-roles-list li {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.learning-paths-list li::before {
+  content: counter(item); /* Numbering */
+  counter-increment: item;
+  background-color: #007bff;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.job-roles-list li::before {
+  content: counter(item); /* Numbering */
+  counter-increment: item;
+  background-color: #28a745; /* Green for job roles */
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+/* For numbering lists */
+ol {
+  counter-reset: item;
+}
+
+.loading-message, .error-message, .no-results-message {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5em;
+  color: #555;
+}
+
+.error-message .btn-primary {
+  margin-top: 20px;
+}

@@ -1,0 +1,104 @@
+/* src/styles/SelectSkills.css */
+
+.select-skills-page {
+  padding: 20px;
+}
+
+.select-skills-page .back-link {
+  margin-bottom: 30px;
+}
+
+.select-skills-page .page-title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.select-skills-page .page-description {
+  font-size: 1.1em;
+  color: #666;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.skill-selection-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.skill-selection-card h3 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.skill-selection-card .form-group {
+  margin-bottom: 30px;
+}
+
+.skill-selection-card label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #555;
+}
+
+.select-dropdown {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  appearance: none; /* Remove default arrow */
+  background-color: white;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%20viewBox%3D%220%200%20292.4%20292.4%22%3E%3Cpath%20fill%3D%22%23007bff%22%20d%3D%22M287%20197.8L154.7%2065.4c-4.4-4.4-10.8-4.4-15.2%200L5%20197.8c-4.4%204.4-4.4%2010.8%200%2015.2l14.8%2014.8c4.4%204.4%2010.8%204.4%2015.2%200l110.7-110.7c4.4-4.4%2010.8-4.4%2015.2%200L257%20227.8c4.4%204.4%2010.8%204.4%2015.2%200l14.8-14.8c4.4-4.4%204.4-10.8%200-15.2z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 15px;
+}
+
+.select-skills-checkboxes {
+  margin-top: 30px;
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+}
+
+.select-skills-checkboxes h4 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.skill-checkbox-label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.skill-checkbox-label input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2); /* Make checkbox slightly larger */
+}
+
+.continue-btn {
+  width: auto; /* Adjust width as needed */
+  display: block;
+  margin: 40px auto 0; /* Center button */
+  padding: 12px 30px;
+  font-size: 1.1em;
+}
+
+.continue-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
